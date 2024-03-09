@@ -732,38 +732,70 @@ h6 {
 }
 
 .page__head {
-  margin-top: 38px;
-  padding-bottom: 39px;
-  padding-top: 39px;
+  padding-bottom: 196px;
+  padding-top: 141px;
   position: relative;
-  overflow: hidden;
 }
 
 .page__head .n_container {
   position: relative;
-  z-index: 2;
+  z-index: 3;
 }
 
-.page__head-bg-image {
+.page__head h1,
+.page__head p {
+  color: #1b1b1b;
+  margin: 0;
+}
+
+.page__head h1 {
+  font-family: "Inter", sans-serif;
+  font-size: 59px;
+  line-height: 63px;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.page__head p {
+  margin-top: 18px;
+}
+
+.page__head-button {
+  min-width: 280px !important;
+  margin-top: 15px;
+}
+
+.page__head .page__head-bg-image {
   bottom: 0;
   left: 0;
   height: 100%;
   position: absolute !important;
-  pointer-events: none;
   right: 0;
   top: 0;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
-  width: 100%;
-  z-index: -1;
 }
 
-.page__head-bg-image img {
+.page__head .page__head-bg-image::before {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0) 100%);
+  bottom: 0;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.page__head .page__head-bg-image img {
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
   left: 0;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: 0% 68%;
+     object-position: 0% 68%;
   position: absolute;
   top: 0;
   width: 100%;
@@ -857,6 +889,11 @@ input[type=submit] {
   padding: 8px 20px;
   transition: all 0.3s ease 0s;
   text-align: center;
+}
+
+.n_btn:hover,
+input[type=submit]:hover {
+  color: #fff !important;
 }
 
 /*
@@ -1702,6 +1739,11 @@ body._touch .header .menu__list > li._active .menu__arrow {
   position: relative;
 }
 
+.fs .n_container {
+  position: relative;
+  z-index: 3;
+}
+
 .fs h1,
 .fs p {
   color: #1b1b1b;
@@ -1736,6 +1778,16 @@ body._touch .header .menu__list > li._active .menu__arrow {
   margin-right: 15px;
 }
 
+.fs .page__head-bg-image {
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  position: absolute !important;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+
 .fs .page__head-bg-image::before {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0) 100%);
   bottom: 0;
@@ -1752,6 +1804,13 @@ body._touch .header .menu__list > li._active .menu__arrow {
 .fs .page__head-bg-image img {
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
+  left: 0;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 
 .our-specialty {
@@ -2084,8 +2143,9 @@ body._touch .header .menu__list > li._active .menu__arrow {
 
 .spn-invest-info__wrap .n_container {
   max-width: 1617px;
-  padding: 83px 25px;
+  padding: 83px 0;
   position: relative;
+  z-index: 3;
 }
 
 .spn-invest-info__title {
@@ -2095,6 +2155,8 @@ body._touch .header .menu__list > li._active .menu__arrow {
   letter-spacing: 0;
   max-width: 1350px;
   margin: 0 auto;
+  padding-left: 35px;
+  padding-right: 35px;
   text-align: center;
 }
 
@@ -2116,14 +2178,32 @@ body._touch .header .menu__list > li._active .menu__arrow {
   text-align: center;
 }
 
+.spn-invest-info .page__head-bg-image {
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  position: absolute !important;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
 .spn-invest-info .page__head-bg-image::before,
 .spn-invest-info .page__head-bg-image img {
   border-radius: 8px;
 }
 
 .spn-invest-info .page__head-bg-image img {
+  left: 0;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
   -o-object-position: 0% 70%;
      object-position: 0% 70%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 0;
 }
 
 .spn-invest-info .page__head-bg-image::before {
@@ -2137,7 +2217,7 @@ body._touch .header .menu__list > li._active .menu__arrow {
   right: 0;
   top: 0;
   width: 100%;
-  z-index: 100;
+  z-index: 1;
 }
 
 .advantages-snp {
@@ -2181,6 +2261,10 @@ body._touch .header .menu__list > li._active .menu__arrow {
 .snp-is-your-partner {
   padding-bottom: 134px;
   padding-top: 70px;
+}
+
+.snp-is-your-partner.page-solar-power-plants {
+  padding-bottom: 57px;
 }
 
 .snp-is-your-partner__item:nth-child(1) {
@@ -2235,7 +2319,77 @@ body._touch .header .menu__list > li._active .menu__arrow {
 .wpcf7-form .wpcf7-form-control-wrap {
   display: block;
   margin: 0 11px 35px !important;
+  position: relative;
   width: calc(50% - 22px);
+}
+
+.snp-is-your-partner__form .snp-is-your-partner__form-wrap-field.no-valid input,
+.snp-is-your-partner__form .wpcf7-form-control-wrap.no-valid input,
+.wpcf7-form .snp-is-your-partner__form-wrap-field.no-valid input,
+.wpcf7-form .wpcf7-form-control-wrap.no-valid input {
+  outline: 1px solid #F67070 !important;
+}
+
+.snp-is-your-partner__form .snp-is-your-partner__form-wrap-field.no-valid .tooltip,
+.snp-is-your-partner__form .wpcf7-form-control-wrap.no-valid .tooltip,
+.wpcf7-form .snp-is-your-partner__form-wrap-field.no-valid .tooltip,
+.wpcf7-form .wpcf7-form-control-wrap.no-valid .tooltip {
+  opacity: 1;
+  visibility: visible;
+}
+
+.snp-is-your-partner__form .snp-is-your-partner__form-wrap-field .tooltip,
+.snp-is-your-partner__form .wpcf7-form-control-wrap .tooltip,
+.wpcf7-form .snp-is-your-partner__form-wrap-field .tooltip,
+.wpcf7-form .wpcf7-form-control-wrap .tooltip {
+  align-items: center;
+  background-color: #F67070;
+  border-radius: 4px;
+  color: #fff;
+  height: 32px;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 14px;
+  letter-spacing: 0;
+  left: 50%;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: absolute;
+  pointer-events: none;
+  visibility: hidden;
+  text-align: center;
+  transition: opacity 0.3s ease 0s;
+  transform: translate(-50%, -17px);
+  width: 218px;
+  max-width: 100%;
+  z-index: 1;
+}
+
+.snp-is-your-partner__form .snp-is-your-partner__form-wrap-field .tooltip:after,
+.snp-is-your-partner__form .wpcf7-form-control-wrap .tooltip:after,
+.wpcf7-form .snp-is-your-partner__form-wrap-field .tooltip:after,
+.wpcf7-form .wpcf7-form-control-wrap .tooltip:after {
+  top: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: "";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-top-color: #F67070;
+  border-width: 9px;
+  margin-left: -9px;
+}
+
+.snp-is-your-partner__form .snp-is-your-partner__form-wrap-field .tooltip p,
+.snp-is-your-partner__form .wpcf7-form-control-wrap .tooltip p,
+.wpcf7-form .snp-is-your-partner__form-wrap-field .tooltip p,
+.wpcf7-form .wpcf7-form-control-wrap .tooltip p {
+  margin: 0;
 }
 
 .snp-is-your-partner__form .snp-is-your-partner__form-wrap-field label,
@@ -2262,6 +2416,7 @@ body._touch .header .menu__list > li._active .menu__arrow {
   display: flex;
   height: 54px;
   font-size: 18px;
+  font-weight: 600;
   padding: 8px 22px;
   width: 100%;
 }
@@ -2278,6 +2433,59 @@ body._touch .header .menu__list > li._active .menu__arrow {
 .wpcf7-form .snp-is-your-partner__form-wrap-field.full-width,
 .wpcf7-form .wpcf7-form-control-wrap.full-width {
   width: 100%;
+}
+
+/* Page - Solar power plants */
+
+.risks {
+  padding-bottom: 1px;
+  padding-top: 50px;
+}
+
+.risks__items {
+  counter-reset: section;
+}
+
+.risks__item {
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.risks__item::before,
+.risks__item::after {
+  position: absolute;
+}
+
+.risks__item::before {
+  color: #fff;
+  counter-increment: section;
+  content: counter(section);
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 40px;
+  letter-spacing: 0;
+  left: 19px;
+  top: 10px;
+}
+
+.risks__item::after {
+  border-top-left-radius: 7px;
+  overflow: hidden;
+  content: url("../images/svg/corner-mobile-for-risks-block.svg");
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.risks__block {
+  border: 1px solid #D98029;
+  border-radius: 8px;
+  height: 100%;
+  padding: 42px 30px 40px 48px;
+}
+
+.risks__block p {
+  margin: 0;
 }
 
 /* Footer */
@@ -2496,6 +2704,10 @@ body._touch .header .menu__list > li._active .menu__arrow {
     width: calc(100% - 105px);
   }
 
+  .risks__item::after {
+    content: url("../images/svg/corner-for-risks-block.svg");
+  }
+
   .footer__items {
     display: flex;
     flex-wrap: wrap;
@@ -2538,6 +2750,24 @@ body._touch .header .menu__list > li._active .menu__arrow {
 @media screen and (min-width: 641px) {
   .spn-invest-info__button {
     margin-top: 14px;
+  }
+}
+
+@media screen and (min-width: 801px) {
+  .risks__items {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -9px;
+    margin-right: -9px;
+  }
+
+  .risks__item {
+    margin: 0 9px 18px;
+    width: calc(50% - 18px);
+  }
+
+  .risks__block {
+    border: 2px solid #D98029;
   }
 }
 
@@ -2933,6 +3163,10 @@ body._touch .header .menu__list > li._active .menu__arrow {
     max-width: 250px;
   }
 
+  .header__button:hover {
+    color: #332F2C !important;
+  }
+
   .header__social {
     margin-left: auto;
     margin-right: 12px;
@@ -2971,7 +3205,7 @@ body._touch .header .menu__list > li._active .menu__arrow {
   .header .menu__icon::after {
     background-color: #332F2C;
     border-radius: 6px;
-    left: 10px;
+    left: 11px;
     height: 2px;
     position: absolute;
     transition: 0.2s;
@@ -3218,7 +3452,13 @@ body._touch .header .menu__list > li._active .menu__arrow {
   }
 
   .page__head {
-    margin-top: 20px;
+    padding-bottom: 120px;
+    padding-top: 80px;
+  }
+
+  .page__head h1 {
+    font-size: 50px;
+    line-height: 54px;
   }
 
   .fs {
@@ -3356,7 +3596,7 @@ body._touch .header .menu__list > li._active .menu__arrow {
 
 @media screen and (max-width: 640.98px) {
   .spn-invest-info__wrap .n_container {
-    padding: 85px 32px 84px;
+    padding: 85px 0 84px;
   }
 
   .spn-invest-info__title {
@@ -3384,6 +3624,25 @@ body._touch .header .menu__list > li._active .menu__arrow {
     height: 4px;
     margin-top: 1px;
     width: 135px;
+  }
+
+  .page__head {
+    padding-bottom: 39px;
+    padding-top: 58px;
+  }
+
+  .page__head h1 {
+    font-size: 35px;
+    line-height: 38px;
+  }
+
+  .page__head p {
+    line-height: 19px;
+    margin-top: 14px;
+  }
+
+  .page__head-button {
+    margin-top: 13px;
   }
 
   .n_btn,
@@ -3606,6 +3865,11 @@ body._touch .header .menu__list > li._active .menu__arrow {
     padding-top: 54px;
   }
 
+  .snp-is-your-partner.page-solar-power-plants {
+    padding-bottom: 64px;
+    padding-top: 29px;
+  }
+
   .snp-is-your-partner__item:nth-child(1) .n_btn {
     margin-top: 33px;
     min-width: 250px;
@@ -3641,6 +3905,17 @@ body._touch .header .menu__list > li._active .menu__arrow {
   .wpcf7-form .snp-is-your-partner__form-wrap-field.wrap-button,
   .wpcf7-form .wpcf7-form-control-wrap.wrap-button {
     margin-bottom: 6px !important;
+  }
+
+  .risks__item::before {
+    font-size: 20px;
+    line-height: 34px;
+    left: 10px;
+    top: 0;
+  }
+
+  .risks__block {
+    padding: 23px;
   }
 
   .footer {
@@ -3716,6 +3991,11 @@ body._touch .header .menu__list > li._active .menu__arrow {
 }
 
 @media screen and (max-width: 360.98px) {
+  .page__head h1 {
+    font-size: 30px;
+    line-height: 33px;
+  }
+
   .header__social {
     margin-right: 8px;
   }
@@ -3728,6 +4008,13 @@ body._touch .header .menu__list > li._active .menu__arrow {
   .fs h1 {
     font-size: 30px;
     line-height: 33px;
+  }
+
+  .spn-invest-info__button {
+    margin-left: 15px;
+    margin-right: 15px;
+    max-width: calc(100% - 30px);
+    width: 100%;
   }
 }
 
