@@ -1990,6 +1990,8 @@ body._touch .header .menu__list > li._active .menu__arrow {
 .our-services {
   padding-bottom: 91px;
   padding-top: 70px;
+  position: relative;
+  z-index: 4;
 }
 
 .our-services__items {
