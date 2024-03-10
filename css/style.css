@@ -2650,9 +2650,22 @@ body._touch .header .menu__list > li._active .menu__arrow {
   padding: 35px 74px;
 }
 
+.block-with-map__block-text .n_sec-title,
 .block-with-map__block-text p {
   color: #fff;
   margin: 0;
+}
+
+.block-with-map__block-text .n_sec-title {
+  margin-bottom: 33px;
+}
+
+.block-with-map__block-text .n_sec-title::after {
+  background-color: #fff;
+}
+
+.block-with-map__block-text p:not(:last-child) {
+  margin-bottom: 20px;
 }
 
 .block-with-map__block-text p strong {
@@ -2682,6 +2695,7 @@ body._touch .header .menu__list > li._active .menu__arrow {
 .risks__item::before,
 .risks__item::after {
   position: absolute;
+  z-index: 1;
 }
 
 .risks__item .before,
@@ -2703,7 +2717,7 @@ body._touch .header .menu__list > li._active .menu__arrow {
   content: url("../images/svg/corner-mobile-for-risks-block.svg");
   left: 0;
   top: 0;
-  z-index: -1;
+  z-index: 0;
 }
 
 .risks__item.full-width {
@@ -2716,7 +2730,12 @@ body._touch .header .menu__list > li._active .menu__arrow {
   display: none;
 }
 
+.risks__item.no-corner::after {
+  display: none;
+}
+
 .risks__block {
+  background-color: #F6F7F9;
   border: 1px solid #D98029;
   border-radius: 8px;
   display: flex;
@@ -2749,6 +2768,18 @@ body._touch .header .menu__list > li._active .menu__arrow {
 }
 
 .risks__block p:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.risks__block ul,
+.risks__block ol {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.risks__block ul li:not(:last-child),
+.risks__block ol li:not(:last-child) {
   margin-bottom: 20px;
 }
 
@@ -2913,6 +2944,43 @@ body._touch .header .menu__list > li._active .menu__arrow {
 .post__pagination .page-numbers.dots {
   margin-left: 0;
   margin-right: 0;
+}
+
+/* Page - Modern energy in ukraine */
+
+.modern-energy-in-ukraine main.main {
+  padding-bottom: 85px;
+}
+
+.modern-energy-in-ukraine .page__head-bg-image img {
+  -o-object-position: 0 56%;
+     object-position: 0 56%;
+}
+
+.modern-energy-in-ukraine .overview-of-sector {
+  padding-bottom: 72px;
+}
+
+.modern-energy-in-ukraine .overview-of-sector__item:nth-child(2) p {
+  color: #D98029;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0;
+  margin: 0;
+  max-width: 580px;
+}
+
+.modern-energy-in-ukraine .block-with-map__block-text {
+  padding: 35px 50px 35px 41px;
+}
+
+.modern-energy-in-ukraine .block-with-map__block-text p {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.modern-energy-in-ukraine .block-with-map__block-image {
+  width: 65%;
 }
 
 /* Footer */
@@ -3233,19 +3301,6 @@ body._touch .header .menu__list > li._active .menu__arrow {
 }
 
 @media screen and (min-width: 861px) {
-  .overview-of-sector__items {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -15px;
-    margin-right: -15px;
-  }
-
-  .overview-of-sector__item {
-    margin-left: 15px;
-    margin-right: 15px;
-    width: calc(50% - 30px);
-  }
-
   .block-with-map__block-text {
     border-radius: 8px 8px 230px 8px;
     display: flex;
@@ -3304,6 +3359,23 @@ body._touch .header .menu__list > li._active .menu__arrow {
 
   .directions-of-work__items.two-columns .directions-of-work__item {
     width: calc(50% - 18px) !important;
+  }
+
+  .overview-of-sector__items {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+
+  .overview-of-sector__item {
+    margin-left: 15px;
+    margin-right: 15px;
+    width: calc(50% - 30px);
+  }
+
+  .modern-energy-in-ukraine .overview-of-sector__item:nth-child(2) {
+    padding-left: 21px;
   }
 }
 
@@ -4080,13 +4152,22 @@ body._touch .header .menu__list > li._active .menu__arrow {
   .directions-of-work__items.two-columns .directions-of-work__item-content {
     padding: 80px 80px 0;
   }
-}
 
-@media screen and (max-width: 860.98px) {
   .overview-of-sector__item:nth-child(2) {
     margin-top: 60px;
   }
 
+  .overview-of-sector__block-text {
+    max-width: 100%;
+    padding-right: 0;
+  }
+
+  .modern-energy-in-ukraine .overview-of-sector__item:nth-child(2) img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 860.98px) {
   .block-with-map__block-image {
     margin-top: -25%;
     width: 100%;
@@ -4096,6 +4177,10 @@ body._touch .header .menu__list > li._active .menu__arrow {
 
   .block-with-map__block-image img.desktop {
     display: none;
+  }
+
+  .modern-energy-in-ukraine .block-with-map__block-image {
+    width: 100%;
   }
 }
 
@@ -4621,8 +4706,16 @@ body._touch .header .menu__list > li._active .menu__arrow {
     padding: 15px 16px;
   }
 
+  .block-with-map__block-text .n_sec-title {
+    margin-bottom: 20px;
+  }
+
   .block-with-map__block-text p {
     font-weight: 400;
+  }
+
+  .block-with-map__block-text p:not(:last-child) {
+    margin-bottom: 15px;
   }
 
   .risks__item .before,
@@ -4652,6 +4745,11 @@ body._touch .header .menu__list > li._active .menu__arrow {
     padding-right: 25px;
     margin-bottom: 11px;
     margin-top: 1px;
+  }
+
+  .risks__block ul li:not(:last-child),
+  .risks__block ol li:not(:last-child) {
+    margin-bottom: 10px;
   }
 
   .investments__block-content {
@@ -4699,6 +4797,19 @@ body._touch .header .menu__list > li._active .menu__arrow {
 
   .post__pagination.hidden-mobile {
     display: none;
+  }
+
+  .modern-energy-in-ukraine main.main {
+    padding-bottom: 50px;
+  }
+
+  .modern-energy-in-ukraine .overview-of-sector {
+    padding-bottom: 40px;
+    padding-top: 58px;
+  }
+
+  .modern-energy-in-ukraine .block-with-map__block-text {
+    padding: 15px 16px;
   }
 
   .footer {
@@ -4780,8 +4891,8 @@ body._touch .header .menu__list > li._active .menu__arrow {
 
 @media screen and (max-width: 360.98px) {
   .page__head h1 {
-    font-size: 30px;
-    line-height: 33px;
+    font-size: 25px;
+    line-height: 28px;
   }
 
   .header__social {
