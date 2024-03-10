@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="files/select/select.css?_v=20240310200257">
+   <link rel="stylesheet" href="files/tabs/tabs.css?_v=20240310200257">
+   <link rel="stylesheet" href="css/style.min.css?_v=20240310200257">
+   <!--<link rel="icon" type="image/svg+xml" href="favicon.svg">-->
+   <title>Інвестиції</title>
+</head>
+
+<body>
+   <div class="wrapper">
+      <header class="header">
+   <div class="header__wrapper lock-padding">
+      <div id="header-container" class="n_container header-container">
+         <a href="index.html" class="header__blockLogo">
+            <img src="images/svg/logo.svg" alt="">
+         </a>
+         <div class="header__menu menu">
+            <div class="menu__body">
+               <nav class="menu-topmenu-container">
+                  <ul class="menu__list">
+                     <li class="menu-item"> <!-- current-menu-item current_page_item -->
+                        <a class="menu__link" href="about-us.html">Про нас</a>
+                     </li>
+                     <li class="menu-item menu-item-has-children">
+                        <a class="menu__link" href="#">Напрямки роботи</a>
+                        <span class="menu__arrow">
+                           <svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1.00195 0.749512L5.50195 5.24951L10.002 0.749512" stroke="#332F2C" stroke-width="2"/>
+                           </svg>
+                        </span>
+                        <ul class="menu__sub-list">
+                           <li class="menu-item">
+                              <a class="menu__link" href="solar-power-plants.html">Сонячні електростанції</a>
+                           </li>
+                           <li class="menu-item">
+                              <a class="menu__link" href="#">Акумулятивні станції</a>
+                           </li>
+                           <li class="menu-item">
+                              <a class="menu__link" href="#">Вітрові електростанції</a>
+                           </li>
+                           <li class="menu-item">
+                              <a class="menu__link" href="#">Виробництво водню</a>
+                           </li>
+                        </ul>
+                     </li>
+                     <li class="menu-item">
+                        <a class="menu__link" href="investments.html">Інвестиції</a>
+                     </li>
+                     <li class="menu-item">
+                        <a class="menu__link" href="#">Довідник</a>
+                     </li>
+                     <li class="menu-item">
+                        <a class="menu__link" href="blog.html">Новини</a>
+                     </li>
+                     <li class="menu-item">
+                        <a class="menu__link" href="contacts.html">Контакти</a>
+                     </li>
+                  </ul>
+               </nav>
+            </div>
+         </div>
+         <ul class="header__social">
+            <li>
+               <a href="tel:">
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M17.921 14.3474L17.8314 14.0774C17.6192 13.4466 16.9237 12.7887 16.2847 12.6153L13.9199 11.9692C13.2786 11.7947 12.3638 12.0293 11.8946 12.4986L11.0387 13.3546C7.92832 12.514 5.48927 10.0744 4.64992 6.96403L5.50583 6.10796C5.97503 5.63867 6.2096 4.72491 6.03513 4.0835L5.39028 1.71708C5.21581 1.07683 4.55682 0.381196 3.92732 0.171302L3.65737 0.0805221C3.02668 -0.129372 2.1272 0.082899 1.65803 0.552153L0.377768 1.83382C0.14905 2.06137 0.00287177 2.71222 0.00287177 2.7146C-0.041906 6.78005 1.55191 10.6969 4.42712 13.5727C7.29528 16.4414 11.1968 18.0332 15.2497 17.999C15.2709 17.999 15.9405 17.8551 16.1692 17.6275L17.4494 16.347C17.9186 15.8778 18.1308 14.9782 17.921 14.3474Z" fill="black"/>
+                  </svg>
+               </a>
+            </li>
+            <li>
+               <a href="https://web.whatsapp.com/" target="_blank">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9991 1.99951C6.48623 1.99951 2.00195 6.48504 2.00195 11.9994C2.00195 14.1864 2.70722 16.2145 3.90612 17.8607L2.66012 21.5761L6.5038 20.3477C8.0847 21.3941 9.9713 21.9995 12.0049 21.9995C17.5177 21.9995 22.002 17.5138 22.002 11.9996C22.002 6.48522 17.5177 1.99968 12.0049 1.99968L11.9991 1.99951ZM9.20731 7.07902C9.0134 6.61462 8.86645 6.59704 8.57269 6.5851C8.47267 6.57929 8.36121 6.57349 8.23764 6.57349C7.85547 6.57349 7.4559 6.68515 7.21489 6.93203C6.92114 7.23184 6.1923 7.93134 6.1923 9.36584C6.1923 10.8004 7.23844 12.1877 7.37943 12.3819C7.52639 12.5756 9.41895 15.5621 12.3575 16.7793C14.6554 17.7317 15.3373 17.6434 15.8603 17.5317C16.6243 17.3671 17.5824 16.8025 17.8234 16.1208C18.0644 15.4387 18.0644 14.8567 17.9937 14.7332C17.9232 14.6098 17.7292 14.5394 17.4354 14.3923C17.1417 14.2453 15.7134 13.5398 15.443 13.4457C15.1784 13.3458 14.9258 13.3812 14.7261 13.6634C14.444 14.0573 14.1678 14.4571 13.9444 14.6981C13.7681 14.8862 13.4799 14.9098 13.2391 14.8097C12.9158 14.6747 12.0108 14.3569 10.894 13.3634C10.03 12.5934 9.44235 11.6352 9.272 11.3472C9.10149 11.0534 9.2544 10.8826 9.38942 10.724C9.53638 10.5417 9.67739 10.4124 9.82435 10.2419C9.97131 10.0715 10.0536 9.98322 10.1476 9.78329C10.2476 9.58933 10.177 9.3894 10.1065 9.2424C10.036 9.0954 9.44831 7.66089 9.20731 7.07902Z" fill="black"/>
+                  </svg>
+               </a>
+            </li>
+            <li>
+               <a href="mailto:">
+                  <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M23.6713 1.74096C23.3331 1.24559 22.7642 0.918213 22.1222 0.918213H1.87669C1.24819 0.918213 0.692437 1.23396 0.351562 1.71209L12.0366 11.4553L23.6713 1.74096Z" fill="black"/>
+                     <path d="M0.00195312 3.37256V17.2059C0.00195312 18.2372 0.845703 19.0809 1.87695 19.0809H22.1225C23.1537 19.0809 23.9975 18.2372 23.9975 17.2059V3.42243L12.0368 13.4083L0.00195312 3.37256Z" fill="black"/>
+                  </svg>
+               </a>
+            </li>
+         </ul>
+         <div data-da="menu-topmenu-container, last-child, 1099" class="header__wrap-buttons">
+            <div class="select">
+               <div class="select__header">
+                  <span class="select__current">UA</span>
+                  <div class="select__icon">
+                     <svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.2002 0.999512L5.7002 5.49951L10.2002 0.999512" stroke="#332F2C" stroke-width="2"/>
+                     </svg>
+                  </div>
+               </div>
+               <div class="select__body">
+                  <div class="select__item current-lang">UA</div>
+                  <div class="select__item">EN</div>
+               </div>
+            </div>
+            <a href="#" class="header__button n_btn">Отримати пропозицію</a>
+         </div>
+         <div class="menu__icon">
+            <span></span>
+        </div>
+      </div>
+   </div>
+</header>
+      <main class="main">
+         <div class="n_container">
+            <h1 class="page__title">Інвестиції</h1>
+         </div>
+         <div class="page__content">
+            <div class="n_container">
+               <h2 class="n_sec-title">Інвестиційні проєкти</h2>
+               <p>at quis risus sed vulputate odio ut enim blandit volutpat maecenas volutpat blandit aliquam etiam erat velit scelerisque in dictum non consectetur a erat nam at lectus urna duis convallis convallis tellus id interdum velit laoreet id donec ultrices tincidunt arcu non sodales neque sodales ut etiam sit amet</p>
+               <p>nisl purus in mollis nunc sed id semper risus in hendrerit gravida rutrum quisque non tellus orci ac auctor augue mauris augue neque gravida in fermentum et sollicitudin ac orci phasellus egestas tellus rutrum tellus pellentesque eu tincidunt tortor aliquam nulla facilisi cras fermentum odio eu</p>
+            </div>
+         </div>
+         <section class="investments">
+            <div class="n_container">
+               <div class="investments__items">
+                  <div class="investments__item">
+                     <div class="investments__block">
+                        <div class="investments__block-image wrap-lazy-load-image">
+                           <img src="images/investments-image-1.png" alt="">
+                        </div>
+                        <div class="investments__block-content">
+                           <h3>Вітрові станції</h3>
+                           <ul>
+                              <li>Excepteur sint <span>Ut enim ad</span></li>
+                              <li>Sed ut <span>Eu fugiat nulla pariatu</span></li>
+                              <li>Deserunt mollit anim id es <span>Sed ut</span></li>
+                              <li>Excepteur sint <span>Ut enim ad</span></li>
+                           </ul>
+                           <div class="investments__block-buttons">
+                              <a href="#" class="n_btn" download="">
+                                 Завантажити
+                                 <img src="images/svg/investments-button-icon.svg" alt="">
+                              </a>
+                              <a href="#" class="n_btn link">Інвестувати</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="investments__item">
+                     <div class="investments__block">
+                        <div class="investments__block-image wrap-lazy-load-image">
+                           <img src="images/investments-image-2.png" alt="">
+                        </div>
+                        <div class="investments__block-content">
+                           <h3>Вітрові станції</h3>
+                           <ul>
+                              <li>Excepteur sint <span>Ut enim ad</span></li>
+                              <li>Sed ut <span>Eu fugiat nulla pariatu</span></li>
+                              <li>Deserunt mollit anim id es <span>Sed ut</span></li>
+                              <li>Excepteur sint <span>Ut enim ad</span></li>
+                           </ul>
+                           <div class="investments__block-buttons">
+                              <a href="#" class="n_btn" download="">
+                                 Завантажити
+                                 <img src="images/svg/investments-button-icon.svg" alt="">
+                              </a>
+                              <a href="#" class="n_btn link">Інвестувати</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="investments__item">
+                     <div class="investments__block">
+                        <div class="investments__block-image wrap-lazy-load-image">
+                           <img src="images/investments-image-3.png" alt="">
+                        </div>
+                        <div class="investments__block-content">
+                           <h3>Вітрові станції</h3>
+                           <ul>
+                              <li>Excepteur sint <span>Ut enim ad</span></li>
+                              <li>Sed ut <span>Eu fugiat nulla pariatu</span></li>
+                              <li>Deserunt mollit anim id es <span>Sed ut</span></li>
+                              <li>Excepteur sint <span>Ut enim ad</span></li>
+                           </ul>
+                           <div class="investments__block-buttons">
+                              <a href="#" class="n_btn" download="">
+                                 Завантажити
+                                 <img src="images/svg/investments-button-icon.svg" alt="">
+                              </a>
+                              <a href="#" class="n_btn link">Інвестувати</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="investments__item">
+                     <div class="investments__block">
+                        <div class="investments__block-image wrap-lazy-load-image">
+                           <img src="images/investments-image-4.png" alt="">
+                        </div>
+                        <div class="investments__block-content">
+                           <h3>Вітрові станції</h3>
+                           <ul>
+                              <li>Excepteur sint <span>Ut enim ad</span></li>
+                              <li>Sed ut <span>Eu fugiat nulla pariatu</span></li>
+                              <li>Deserunt mollit anim id es <span>Sed ut</span></li>
+                              <li>Excepteur sint <span>Ut enim ad</span></li>
+                           </ul>
+                           <div class="investments__block-buttons">
+                              <a href="#" class="n_btn" download="">
+                                 Завантажити
+                                 <img src="images/svg/investments-button-icon.svg" alt="">
+                              </a>
+                              <a href="#" class="n_btn link">Інвестувати</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="investments__item">
+                     <div class="investments__block">
+                        <div class="investments__block-image wrap-lazy-load-image">
+                           <img src="images/investments-image-5.png" alt="">
+                        </div>
+                        <div class="investments__block-content">
+                           <h3>Вітрові станції</h3>
+                           <ul>
+                              <li>Excepteur sint <span>Ut enim ad</span></li>
+                              <li>Sed ut <span>Eu fugiat nulla pariatu</span></li>
+                              <li>Deserunt mollit anim id es <span>Sed ut</span></li>
+                              <li>Excepteur sint <span>Ut enim ad</span></li>
+                           </ul>
+                           <div class="investments__block-buttons">
+                              <a href="#" class="n_btn" download="">
+                                 Завантажити
+                                 <img src="images/svg/investments-button-icon.svg" alt="">
+                              </a>
+                              <a href="#" class="n_btn link">Інвестувати</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="investments__item">
+                     <div class="investments__block">
+                        <div class="investments__block-image wrap-lazy-load-image">
+                           <img src="images/investments-image-6.png" alt="">
+                        </div>
+                        <div class="investments__block-content">
+                           <h3>Вітрові станції</h3>
+                           <ul>
+                              <li>Excepteur sint <span>Ut enim ad</span></li>
+                              <li>Sed ut <span>Eu fugiat nulla pariatu</span></li>
+                              <li>Deserunt mollit anim id es <span>Sed ut</span></li>
+                              <li>Excepteur sint <span>Ut enim ad</span></li>
+                           </ul>
+                           <div class="investments__block-buttons">
+                              <a href="#" class="n_btn" download="">
+                                 Завантажити
+                                 <img src="images/svg/investments-button-icon.svg" alt="">
+                              </a>
+                              <a href="#" class="n_btn link">Інвестувати</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="investments__item">
+                     <div class="investments__block">
+                        <div class="investments__block-image wrap-lazy-load-image">
+                           <img src="images/investments-image-7.png" alt="">
+                        </div>
+                        <div class="investments__block-content">
+                           <h3>Вітрові станції</h3>
+                           <ul>
+                              <li>Excepteur sint <span>Ut enim ad</span></li>
+                              <li>Sed ut <span>Eu fugiat nulla pariatu</span></li>
+                              <li>Deserunt mollit anim id es <span>Sed ut</span></li>
+                              <li>Excepteur sint <span>Ut enim ad</span></li>
+                           </ul>
+                           <div class="investments__block-buttons">
+                              <a href="#" class="n_btn" download="">
+                                 Завантажити
+                                 <img src="images/svg/investments-button-icon.svg" alt="">
+                              </a>
+                              <a href="#" class="n_btn link">Інвестувати</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="investments__item">
+                     <div class="investments__block">
+                        <div class="investments__block-image wrap-lazy-load-image">
+                           <img src="images/investments-image-8.png" alt="">
+                        </div>
+                        <div class="investments__block-content">
+                           <h3>Вітрові станції</h3>
+                           <ul>
+                              <li>Excepteur sint <span>Ut enim ad</span></li>
+                              <li>Sed ut <span>Eu fugiat nulla pariatu</span></li>
+                              <li>Deserunt mollit anim id es <span>Sed ut</span></li>
+                              <li>Excepteur sint <span>Ut enim ad</span></li>
+                           </ul>
+                           <div class="investments__block-buttons">
+                              <a href="#" class="n_btn" download="">
+                                 Завантажити
+                                 <img src="images/svg/investments-button-icon.svg" alt="">
+                              </a>
+                              <a href="#" class="n_btn link">Інвестувати</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="investments__item">
+                     <div class="investments__block">
+                        <div class="investments__block-image wrap-lazy-load-image">
+                           <img src="images/investments-image-9.png" alt="">
+                        </div>
+                        <div class="investments__block-content">
+                           <h3>Вітрові станції</h3>
+                           <ul>
+                              <li>Excepteur sint <span>Ut enim ad</span></li>
+                              <li>Sed ut <span>Eu fugiat nulla pariatu</span></li>
+                              <li>Deserunt mollit anim id es <span>Sed ut</span></li>
+                              <li>Excepteur sint <span>Ut enim ad</span></li>
+                           </ul>
+                           <div class="investments__block-buttons">
+                              <a href="#" class="n_btn" download="">
+                                 Завантажити
+                                 <img src="images/svg/investments-button-icon.svg" alt="">
+                              </a>
+                              <a href="#" class="n_btn link">Інвестувати</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="post__pagination hidden-mobile">
+                  <a class="prev page-numbers" href="#">
+                     <svg width="8" height="11" viewBox="0 0 8 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.25 10L5.75 5.5L1.25 1" stroke="#1B1B1B" stroke-opacity="0.65" stroke-width="2"/>
+                     </svg>
+                  </a>
+                  <span aria-current="page" class="page-numbers current">01</span>
+                  <a class="page-numbers" href="#">02</a>
+                  <a class="page-numbers" href="#">03</a>
+                  <a class="page-numbers" href="#">04</a>
+                  <a class="page-numbers" href="#">05</a>
+                  <a class="next page-numbers" href="#">
+                     <svg width="8" height="11" viewBox="0 0 8 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.25 10L5.75 5.5L1.25 1" stroke="#1B1B1B" stroke-opacity="0.65" stroke-width="2"/>
+                     </svg>
+                  </a>
+               </div>
+            </div>
+         </section>
+         <section class="snp-is-your-partner page-investments">
+            <div class="n_container">
+               <div class="snp-is-your-partner__items">
+                  <div class="snp-is-your-partner__item">
+                     <div class="snp-is-your-partner__item-content">
+                        <h2 class="n_sec-title">SNP Invest - ваш надійний партнер у сфері альтернативної енергії</h2>
+                        <div class="snp-is-your-partner__block-text">
+                           <p><strong>SNP Invest супроводжує інвестора на кожному етапі розробки проєкту.</strong> Спеціалізуємося на всіх аспектах енергетичного будівництва, включаючи договірний супровід, проектування, монтаж та експлуатацію.</p>
+                           <p>Наша досвідчена команда інженерів, архітекторів та менеджерів тісно співпрацює з партнерами, щоб забезпечити вчасне виконання проєкту в межах бюджету та з використанням найвищих стандартів якості.</p>
+                        </div>
+                        <a href="#" class="n_btn">Отримати презентацію</a>
+                     </div>
+                  </div>
+                  <div class="snp-is-your-partner__item">
+                     <p class="snp-is-your-partner__text-above-form">Залиште свої контактні дані, щоб ми могли з вами зв’язатися та запропонувати найкраще рішення</p>
+                     <form action="#" method="post" class="snp-is-your-partner__form"><!-- wpcf7-form -->
+                        <div class="snp-is-your-partner__form-wrap-field"><!-- wpcf7-form-control-wrap -->
+                           <label for="first-name">Ім'я</label>
+                           <input type="text" name="first-name" id="first-name">
+                        </div>
+                        <div class="snp-is-your-partner__form-wrap-field">
+                           <label for="first-last">Прізвище</label>
+                           <input type="text" name="first-last" id="first-last">
+                        </div>
+                        <div class="snp-is-your-partner__form-wrap-field full-width">
+                           <label for="what-industry">Галузь відновлюваної енергетики, який вас цікавить</label>
+                           <input type="text" name="what-industry" id="what-industry">
+                        </div>
+                        <div class="snp-is-your-partner__form-wrap-field"><!-- no-valid -->
+                           <div class="tooltip">
+                              <p>Введіть номер телефону</p>
+                           </div>
+                           <label for="phone">Телефон</label>
+                           <input type="text" name="phone" id="phone">
+                        </div>
+                        <div class="snp-is-your-partner__form-wrap-field">
+                           <label for="email">E-mail</label>
+                           <input type="text" name="email" id="email">
+                        </div>
+                        <div class="snp-is-your-partner__form-wrap-field full-width">
+                           <label for="message">Текстове повідомлення</label>
+                           <input type="text" name="message" id="message">
+                        </div>
+                        <div class="snp-is-your-partner__form-wrap-field full-width wrap-button">
+                           <!--<button type="submit" class="n_btn">Надіслати</button>-->
+                           <input type="submit" value="Надіслати">
+                        </div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+      <footer class="footer">
+   <div class="n_container">
+      <div class="footer__items">
+         <div class="footer__item">
+            <div class="footer__item-content">
+               <div class="footer__block-logo">
+                  <img src="images/svg/logo.svg" alt="SNP Invest">
+               </div>
+               <p class="footer__copyright">&copy;2024 SNP Invest</p>
+            </div>
+         </div>
+         <div class="footer__item">
+            <div class="footer__item-content">
+               <nav class="footer__menu">
+                  <ul>
+                     <li>
+                        <a href="#">Про нас</a>
+                     </li>
+                     <li>
+                        <a href="#">Новини та події</a>
+                     </li>
+                     <li>
+                        <a href="#">Політика конфіденційності</a>
+                     </li>
+                     <li>
+                        <a href="#">Контакти</a>
+                     </li>
+                  </ul>
+               </nav>
+               <ul class="footer__social">
+                  <li>
+                     <a href="https://www.facebook.com" target="_blank">
+                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M10.1567 -0.00947571C8.33457 -0.00947571 6.64825 0.44607 5.0978 1.35716C3.59531 2.25226 2.3965 3.45107 1.5014 4.95356C0.59031 6.50401 0.134766 8.19032 0.134766 10.0125C0.134766 11.6429 0.51039 13.1773 1.26164 14.6159C1.9969 16.0065 3.00789 17.1693 4.29461 18.1044C5.58132 19.0395 7.00789 19.6349 8.57433 19.8906V12.8896H6.03287V10.0125H8.57433V7.80671C8.57433 6.55996 8.91399 5.59692 9.59331 4.9176C10.2726 4.23828 11.1957 3.89862 12.3625 3.89862C12.8101 3.89862 13.3216 3.93058 13.897 3.99452L14.5923 4.1144V6.55996H13.3456C12.7701 6.55996 12.3386 6.7198 12.0508 7.03948C11.8271 7.3112 11.7152 7.67085 11.7152 8.1184V9.98853H14.4724L14.0409 12.8896H11.7152V19.8666C13.2816 19.6269 14.7082 19.0395 15.9949 18.1044C17.2816 17.1693 18.2926 16.0065 19.0279 14.6159C19.7791 13.1773 20.1547 11.6429 20.1547 10.0125C20.1547 8.19032 19.6992 6.50401 18.7881 4.95356C17.893 3.45107 16.6942 2.25226 15.1917 1.35716C13.6413 0.44607 11.9629 -0.00947571 10.1567 -0.00947571Z" fill="#1C1B1D"/>
+                        </svg>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="https://www.instagram.com" target="_blank">
+                        <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M18.1123 6.29608C18.0964 5.54483 17.9525 4.80956 17.6808 4.09028C17.457 3.48289 17.1133 2.95142 16.6498 2.49588C16.1863 2.04033 15.6508 1.69268 15.0434 1.45292C14.3401 1.19718 13.6128 1.06131 12.8616 1.04533C12.0464 0.997375 10.8076 0.973398 9.14531 0.973398L6.7477 0.997375C6.3481 0.997375 5.91653 1.01336 5.453 1.04533C4.70175 1.06131 3.97448 1.19718 3.27118 1.45292C2.66379 1.69268 2.12832 2.04033 1.66479 2.49588C1.20125 2.95142 0.857594 3.48289 0.633817 4.09028C0.362089 4.79358 0.218233 5.52085 0.202249 6.2721C0.170281 7.10327 0.154297 8.34203 0.154297 9.98838V12.386C0.170281 12.8016 0.186265 13.2411 0.202249 13.7047C0.218233 14.4559 0.362089 15.1832 0.633817 15.8865C0.857594 16.4939 1.20125 17.0253 1.66479 17.4809C2.12832 17.9364 2.66379 18.2841 3.27118 18.5238C3.97448 18.7956 4.70175 18.9394 5.453 18.9554C6.28417 19.0034 7.52293 19.0273 9.16928 19.0273L11.5669 19.0034C11.9665 19.0034 12.3981 18.9874 12.8616 18.9554C13.6128 18.9394 14.3401 18.8036 15.0434 18.5478C15.6508 18.3081 16.1863 17.9604 16.6498 17.5049C17.1133 17.0493 17.457 16.5179 17.6808 15.9105C17.9525 15.2072 18.0964 14.4799 18.1123 13.7286C18.1443 12.8975 18.1603 11.6587 18.1603 10.0124V7.59078C18.1443 7.19118 18.1283 6.75961 18.1123 6.29608ZM9.14531 14.5918C8.31414 14.5918 7.54291 14.388 6.83162 13.9804C6.12033 13.5728 5.55689 13.0134 5.14131 12.3021C4.72573 11.5908 4.51793 10.8156 4.51793 9.9764C4.51793 9.13723 4.72573 8.36601 5.14131 7.66271C5.55689 6.95941 6.12033 6.39997 6.83162 5.98439C7.54291 5.5688 8.31414 5.36101 9.14531 5.36101C9.76868 5.36101 10.3601 5.4769 10.9195 5.70866C11.479 5.94043 11.9785 6.2721 12.418 6.70367C12.8576 7.13524 13.1933 7.63474 13.425 8.20217C13.6568 8.7696 13.7727 9.36101 13.7727 9.9764C13.7727 10.5918 13.6568 11.1832 13.425 11.7506C13.1933 12.3181 12.8576 12.8176 12.418 13.2491C11.9785 13.6807 11.479 14.0124 10.9195 14.2441C10.3601 14.4759 9.76868 14.5918 9.14531 14.5918ZM13.9645 6.2721C13.8206 6.2721 13.6808 6.24413 13.5449 6.18818C13.409 6.13224 13.2932 6.05232 13.1973 5.94842C13.1013 5.84453 13.0254 5.72864 12.9695 5.60077C12.9135 5.4729 12.8856 5.33704 12.8856 5.19318C12.8856 5.04932 12.9135 4.90946 12.9695 4.7736C13.0254 4.63773 13.1013 4.52185 13.1973 4.42595C13.2932 4.33004 13.409 4.25412 13.5449 4.19817C13.6808 4.14223 13.8206 4.11426 13.9645 4.11426C14.1083 4.11426 14.2442 4.14223 14.3721 4.19817C14.5 4.25412 14.6158 4.33004 14.7197 4.42595C14.8236 4.52185 14.9035 4.63773 14.9595 4.7736C15.0154 4.90946 15.0434 5.04932 15.0434 5.19318C15.0434 5.48089 14.9355 5.73264 14.7197 5.94842C14.5039 6.16421 14.2522 6.2721 13.9645 6.2721ZM9.14531 12.9854C9.68876 12.9854 10.1923 12.8495 10.6558 12.5778C11.1193 12.3061 11.483 11.9424 11.7467 11.4869C12.0104 11.0313 12.1423 10.5318 12.1423 9.98838C12.1423 9.44493 12.0104 8.94143 11.7467 8.47789C11.483 8.01436 11.1193 7.64672 10.6558 7.375C10.1923 7.10327 9.68876 6.9674 9.14531 6.9674C8.60185 6.9674 8.10235 7.10327 7.6468 7.375C7.19126 7.64672 6.82762 8.01436 6.5559 8.47789C6.28417 8.94143 6.1483 9.44493 6.1483 9.98838C6.1483 10.5318 6.28417 11.0313 6.5559 11.4869C6.82762 11.9424 7.19126 12.3061 7.6468 12.5778C8.10235 12.8495 8.60185 12.9854 9.14531 12.9854Z" fill="#1C1B1D"/>
+                        </svg>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="https://www.youtube.com/" target="_blank">
+                        <svg class="footer__youtybe-icon" width="21" height="15" viewBox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M19.7872 2.19325C19.6593 1.77766 19.4395 1.41003 19.1279 1.09035C18.8162 0.77067 18.4445 0.554886 18.013 0.442998C17.5494 0.315125 16.6383 0.211229 15.2797 0.13131C14.3207 0.0833578 13.1858 0.0433979 11.8751 0.0114298H10.1968H8.49448C7.1838 0.0274134 6.04893 0.0593815 5.08989 0.107334C3.73125 0.187254 2.82815 0.287154 2.3806 0.407034C1.93305 0.526914 1.55343 0.746695 1.24174 1.06637C0.930049 1.38605 0.714265 1.76967 0.594385 2.21722C0.474505 2.66478 0.374605 3.30414 0.294685 4.13531C0.246733 4.72671 0.214765 5.38206 0.198781 6.10134L0.174805 6.98845V7.89954C0.206773 8.61882 0.246733 9.27417 0.294685 9.86558C0.358621 10.6967 0.450529 11.3361 0.570409 11.7837C0.690289 12.2312 0.906073 12.6148 1.21776 12.9345C1.52945 13.2542 1.90108 13.47 2.33265 13.5819C2.81217 13.7097 3.72326 13.8056 5.06591 13.8696C6.04094 13.9335 7.1838 13.9735 8.49448 13.9895L10.1728 14.0134L11.8511 13.9895C13.1618 13.9735 14.3047 13.9415 15.2797 13.8935C16.6224 13.8296 17.5175 13.7377 17.965 13.6178C18.4126 13.4979 18.7962 13.2782 19.1159 12.9585C19.4355 12.6388 19.6553 12.2592 19.7752 11.8196C19.8951 11.3801 19.987 10.7447 20.0509 9.91353C20.1149 9.30614 20.1548 8.6428 20.1708 7.92352L20.1948 7.0364L20.1708 6.12532C20.1548 5.40604 20.1229 4.75069 20.0749 4.15928C20.011 3.31213 19.9151 2.65678 19.7872 2.19325ZM8.1828 10.0094V4.01543L13.3856 7.01243L8.1828 10.0094Z" fill="#1C1B1D"/>
+                        </svg>
+                     </a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+         <div class="footer__item">
+            <div class="footer__item-content">
+               <nav class="footer__menu">
+                  <ul>
+                     <li>
+                        <a href="solar-power-plants.html">Сонячні електростанції</a>
+                     </li>
+                     <li>
+                        <a href="#">Вітрові станції</a>
+                     </li>
+                     <li>
+                        <a href="#">Акумуляційні станції</a>
+                     </li>
+                     <li>
+                        <a href="#">Виробництво водню</a>
+                     </li>
+                  </ul>
+               </nav>
+            </div>
+         </div>
+         <div class="footer__item">
+            <div class="footer__item-content">
+               <div class="footer__block-info">
+                  <div class="footer__wrap-icon-and-name">
+                     <div class="wrap-icon">
+                        <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <g clip-path="url(#footer-location-icon)">
+                              <g clip-path="url(#footer-location-icon-2)">
+                                 <path d="M12.828 1.6419C11.7691 0.584018 10.3621 0.000488281 8.86561 0.000488281C7.36913 0.000488281 5.96208 0.583076 4.90325 1.6419C2.94466 3.60049 2.7009 7.28519 4.37619 9.51766L8.86561 16.0014L13.3484 9.52708C15.0303 7.28519 14.7865 3.60143 12.828 1.64284V1.6419ZM8.91737 7.59766C7.78984 7.59766 6.87219 6.68002 6.87219 5.55249C6.87219 4.42496 7.78984 3.50731 8.91737 3.50731C10.0449 3.50731 10.9625 4.42496 10.9625 5.55249C10.9625 6.68002 10.0449 7.59766 8.91737 7.59766Z" fill="#D98029"/>
+                              </g>
+                           </g>
+                           <defs>
+                              <clipPath id="footer-location-icon">
+                                 <rect width="16" height="16" fill="white" transform="translate(0.865234 0.000488281)"/>
+                              </clipPath>
+                              <clipPath id="footer-location-icon-2">
+                                 <rect width="16" height="16" fill="white" transform="translate(0.865234 0.000488281)"/>
+                              </clipPath>
+                           </defs>
+                        </svg>
+                     </div>
+                     <p><strong>Адреса:</strong></p>
+                  </div>
+                  <address><span>Офіс:</span> м. Івано-Франківськ, вул. Євгена Коновальця, 72</address>
+               </div>
+               <div class="footer__block-info">
+                  <div class="footer__wrap-icon-and-name">
+                     <div class="wrap-icon">
+                        <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <g clip-path="url(#footer-clock-icon)">
+                              <path d="M8.39258 16.73C3.98128 16.73 0.392578 13.1413 0.392578 8.72998C0.392578 4.31869 3.98128 0.72998 8.39258 0.72998C12.8039 0.72998 16.3926 4.31869 16.3926 8.72998C16.3926 13.1413 12.8039 16.73 8.39258 16.73ZM12.1968 4.59163C12.0669 4.46175 11.8966 4.39586 11.7253 4.39586C11.554 4.39586 11.3836 4.46175 11.2538 4.59163L7.92011 7.92527C7.79493 8.04951 7.72434 8.21892 7.72434 8.3968V12.73C7.72434 13.0989 8.0227 13.3963 8.3907 13.3963C8.7587 13.3963 9.05705 13.098 9.05705 12.73V8.67257L12.1949 5.53469C12.4556 5.27398 12.4556 4.85233 12.1949 4.59163H12.1968Z" fill="#D98029"/>
+                           </g>
+                           <defs>
+                              <clipPath id="footer-clock-icon">
+                                 <rect width="16" height="16" fill="white" transform="matrix(1 0 0 -1 0.392578 16.73)"/>
+                              </clipPath>
+                           </defs>
+                        </svg>
+                     </div>
+                     <p><strong>Графік роботи:</strong></p>
+                  </div>
+                  <p><span>Пн-Пт: </span>10:00-18:00 год</p>
+                  <p><span>Сб-Нд: </span>вихідні</p>
+               </div>
+            </div>
+         </div>
+         <div class="footer__item">
+            <div class="footer__item-content">
+               <div class="footer__block-info">
+                  <div class="footer__wrap-icon-and-name">
+                     <div class="wrap-icon">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <g clip-path="url(#footer-tel-icon)">
+                              <g clip-path="url(#footer-tel-icon-2)">
+                                 <path d="M14.7163 10.5031C13.7365 10.5031 12.7746 10.3497 11.8636 10.0485C11.4165 9.89605 10.8678 10.0363 10.5949 10.3158L8.79627 11.6739C6.70968 10.5605 5.42498 9.27582 4.32662 7.20523L5.64521 5.45276C5.9878 5.11111 6.11015 4.61135 5.96333 4.14264C5.66121 3.22594 5.50686 2.26499 5.50686 1.28523C5.50686 0.577465 4.93086 0.00146484 4.22309 0.00146484H1.28474C0.576977 0.00146484 0.000976562 0.577465 0.000976562 1.28523C0.000976562 9.40005 6.60239 16.0015 14.7172 16.0015C15.425 16.0015 16.001 15.4255 16.001 14.7177V11.7878C16.001 11.0801 15.425 10.5041 14.7172 10.5041L14.7163 10.5031Z" fill="#D98029"/>
+                              </g>
+                           </g>
+                           <defs>
+                              <clipPath id="footer-tel-icon">
+                                 <rect width="16" height="16" fill="white" transform="translate(0 0.000488281)"/>
+                              </clipPath>
+                              <clipPath id="footer-tel-icon-2">
+                                 <rect width="16" height="16" fill="white" transform="translate(0 0.000488281)"/>
+                              </clipPath>
+                           </defs>
+                        </svg>
+                     </div>
+                     <p>Телефон:</p>
+                  </div>
+                  <p><a href="tel:+380667777707" class="footer__phone">+38 (066) 77 77 707</a></p>
+               </div>
+               <div class="footer__block-info">
+                  <div class="footer__wrap-icon-and-name">
+                     <div class="wrap-icon">
+                        <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <g clip-path="url(#footer-icon-email)">
+                              <g clip-path="url(#footer-icon-email-2)">
+                                 <path d="M1.30466 3.32422C3.50042 5.18398 7.3536 8.45551 8.48584 9.47574C8.63831 9.61316 8.80113 9.68374 8.97054 9.68374C9.13995 9.68374 9.30184 9.6141 9.45431 9.47763C10.5875 8.45645 14.4407 5.18398 16.6374 3.32422C16.7738 3.20845 16.7945 3.00516 16.6844 2.86398C16.4284 2.53739 16.0472 2.3501 15.6378 2.3501H2.30419C1.89572 2.3501 1.5136 2.53739 1.2576 2.86398C1.14654 3.00516 1.16819 3.20845 1.30466 3.32422Z" fill="#D98029"/>
+                                 <path d="M16.7779 4.33216C16.6593 4.27757 16.5209 4.2964 16.4221 4.38016C14.984 5.59899 13.0894 7.21028 11.6598 8.43946C11.5845 8.50346 11.5421 8.59852 11.544 8.69828C11.5459 8.79805 11.5911 8.89028 11.6692 8.9524C12.9972 10.0159 14.9981 11.4785 16.4428 12.5185C16.5002 12.5599 16.5689 12.5816 16.6377 12.5816C16.6894 12.5816 16.7421 12.5693 16.7892 12.5449C16.9002 12.4875 16.9708 12.3736 16.9708 12.2484V4.63522C16.9708 4.50534 16.8955 4.38581 16.7779 4.33216Z" fill="#D98029"/>
+                                 <path d="M1.4987 12.5178C2.94435 11.4778 4.94529 10.0152 6.27235 8.95167C6.34953 8.88955 6.39564 8.79637 6.39753 8.69755C6.39941 8.59872 6.35706 8.50367 6.28176 8.43872C4.85306 7.20955 2.95753 5.5992 1.51941 4.37943C1.42059 4.29567 1.28129 4.27684 1.16364 4.33143C1.046 4.38602 0.970703 4.50367 0.970703 4.63355V12.2467C0.970703 12.3719 1.04035 12.4867 1.15235 12.5432C1.20035 12.5677 1.25211 12.5799 1.30482 12.5799C1.37353 12.5799 1.44223 12.5583 1.49964 12.5168L1.4987 12.5178Z" fill="#D98029"/>
+                                 <path d="M16.5623 13.4259C15.1666 12.4273 12.5962 10.5666 11.0621 9.32049C10.9369 9.21885 10.7562 9.22167 10.6329 9.32802C10.3317 9.59061 10.0795 9.81179 9.90067 9.97273C9.35197 10.4678 8.59056 10.4678 8.03997 9.97179C7.86209 9.81179 7.60985 9.58967 7.30867 9.32802C7.18632 9.22167 7.00562 9.21791 6.8795 9.32049C5.35009 10.5619 2.77691 12.4254 1.37926 13.4259C1.30115 13.4814 1.25126 13.568 1.24185 13.6631C1.23244 13.7581 1.26444 13.8532 1.32938 13.9238C1.58162 14.1958 1.93738 14.352 2.30444 14.352H15.6381C16.0051 14.352 16.36 14.1958 16.6131 13.9247C16.6781 13.8551 16.7101 13.76 16.7007 13.665C16.6913 13.5699 16.6404 13.4833 16.5633 13.4268L16.5623 13.4259Z" fill="#D98029"/>
+                              </g>
+                           </g>
+                           <defs>
+                              <clipPath id="footer-icon-email">
+                                 <rect width="16" height="16" fill="white" transform="translate(0.970703 0.351074)"/>
+                              </clipPath>
+                              <clipPath id="footer-icon-email-2">
+                                 <rect width="16" height="16" fill="white" transform="translate(0.970703 0.351074)"/>
+                              </clipPath>
+                           </defs>
+                        </svg>
+                     </div>
+                     <p>E-mail:</p>
+                  </div>
+                  <p><a href="mailto:office@snpinvest.com">office@snpinvest.com</a></p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</footer>
+   </div>
+
+   <script src="js/script.min.js?_v=20240310200257"></script>
+
+   <script src="files/select/select.js?_v=20240310200257"></script>
+
+</body>
+</html>
