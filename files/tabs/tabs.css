@@ -1,0 +1,117 @@
+.tabs {
+   margin: 21px 0;
+}
+.tabs__wrap-tab,
+.tabs .tab-active {
+   border-radius: 10px;
+}
+.tabs__wrap-tab {
+   background-color: #D98029;
+   padding: 15px;
+}
+.tabs__wrap-tab .tab {
+   display: inline-block;
+   cursor: pointer;
+   padding: 34px 15px 33px;
+   position: relative;
+   width: 100%;
+}
+.tabs__wrap-tab .tab h4,
+.tabs__wrap-tab .tab p {
+   color: #fff;
+   letter-spacing: 0;
+   margin: 0;
+   pointer-events: none;
+   user-select: none;
+   text-align: center;
+}
+.tabs__wrap-tab .tab h4 {
+   font-size: 30px;
+   line-height: 40px;
+}
+.tabs__wrap-tab .tab p {
+   font-size: 18px;
+   font-weight: 600;
+   line-height: 32px;
+   margin-top: 6px;
+}
+.tabs .tab-active {
+   background-color: #EF9842;
+}
+.tabs .tabContent {
+   padding-bottom: 50px;
+   padding-top: 40px;
+}
+.tabs .tabContent blockquote {
+   margin-top: 0;
+}
+#tabs .hide {
+   display: none;
+}
+#tabs .show {
+   display: block;
+}
+
+@media (min-width: 641px) {
+
+   .tabs__wrap-tab {
+      display: flex;
+   }
+   .tabs__wrap-tab .tab {
+      width: 25%;
+   }
+}
+@media (max-width: 1280.98px) {
+   .tabs__wrap-tab .tab h4 {
+      font-size: 20px;
+      line-height: 30px;
+   }
+   .tabs__wrap-tab .tab p {
+      font-size: 12px;
+      line-height: 22px;
+   }
+}
+@media (max-width: 640.98px) {
+   .tabs__wrap-tab .tab h4 {
+      font-size: 30px;
+      line-height: 40px;
+   }
+   .tabs__wrap-tab .tab p {
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 32px;
+      margin-top: 6px;
+   }
+}
+@media (max-width: 575.98px) {
+
+   .tabs {
+      margin-top: 29px;
+   }
+   .tabs__wrap-tab,
+   .tabs .tab-active {
+      border-radius: 8px;
+   }
+   .tabs__wrap-tab {
+      padding: 13px;
+   }
+   .tabs__wrap-tab .tab {
+      padding: 20px 12px;
+   }
+   .tabs__wrap-tab .tab h4 {
+      font-size: 20px;
+      line-height: 26px;
+   }
+   .tabs__wrap-tab .tab p {
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 21px;
+      margin-top: 14px;
+   }
+   .tabs .tabContent .risks {
+      margin-bottom: -72px;
+   }
+   .tabs .tabContent .risks__item {
+      margin-bottom: 70px;
+   }
+}
