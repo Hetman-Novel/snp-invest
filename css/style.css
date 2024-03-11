@@ -2957,6 +2957,11 @@ body._touch .header .menu__list > li._active .menu__arrow {
      object-position: 0 56%;
 }
 
+.modern-energy-in-ukraine .tabs .page__content blockquote {
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+
 .modern-energy-in-ukraine .overview-of-sector {
   padding-bottom: 72px;
 }
@@ -3238,6 +3243,164 @@ body.about-us .advantages-snp p {
   color: #333;
 }
 
+/* Page - Contacts */
+
+.contacts .page__title {
+  padding-bottom: 20px;
+}
+
+.contacts__items {
+  margin-bottom: 126px;
+}
+
+.contacts__item .snp-is-your-partner__form,
+.contacts__item .wpcf7-form {
+  padding: 41px 29px 4px;
+}
+
+.contacts__wrap-blocks-info {
+  padding: 98px 80px 98px 17.5%;
+}
+
+.contacts__block-info:not(:last-child) {
+  margin-bottom: 42px;
+}
+
+.contacts__block-info p,
+.contacts__block-info address {
+  color: #1B1B1B;
+  font-size: 23px;
+  line-height: 36px;
+  letter-spacing: 0;
+  font-style: normal;
+}
+
+.contacts__block-info p.font-regular {
+  font-weight: 400;
+}
+
+.contacts__block-info p span {
+  color: #D98029;
+}
+
+.contacts__block-info a {
+  color: inherit;
+}
+
+.contacts__wrap-icon-and-name {
+  align-items: center;
+  display: flex;
+  padding-bottom: 6px;
+}
+
+.contacts__wrap-icon-and-name p {
+  font-size: 23px;
+  line-height: 29px;
+  letter-spacing: 0;
+}
+
+.contacts .wrap-icon {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 23px;
+  margin-right: 12px;
+  width: 23px;
+}
+
+.contacts .wrap-icon svg {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.contacts__phone {
+  font-family: "Inter", sans-serif;
+  font-size: 23px;
+  font-weight: 800;
+  line-height: 31px;
+  letter-spacing: 0;
+}
+
+/* Page - 404 */
+
+.error404 main.main {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 65px;
+  padding-top: 172px;
+}
+
+.error404__content p {
+  color: #1b1b1b;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0;
+  margin: 21px 0 24px;
+  text-align: center;
+}
+
+.error404__content .n_btn {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 293px;
+  max-width: 293px;
+}
+
+.error404__block-image {
+  height: 319px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 295px;
+}
+
+.error404__block-image::after {
+  background: linear-gradient(180deg, rgba(217, 128, 41, 0) 0%, rgba(217, 128, 41, 0) 45%, rgb(217, 128, 41) 100%);
+  border-bottom-right-radius: 110px;
+  bottom: 0;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.error404__block-image h1 {
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-size: 116px;
+  font-weight: 700;
+  line-height: 124px;
+  letter-spacing: 12px;
+  left: 50%;
+  margin: 0;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  text-align: center;
+  z-index: 3;
+}
+
+.error404__block-image img {
+  border-bottom-right-radius: 111px;
+  left: 0;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 63% 0;
+     object-position: 63% 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
 /* Footer */
 
 .footer {
@@ -3466,6 +3629,14 @@ body.about-us .advantages-snp p {
     padding-right: 8px;
   }
 
+  .modern-energy-in-ukraine .tabs .page__content blockquote {
+    align-items: center;
+    display: flex;
+    min-height: 161px;
+    margin-bottom: 41px;
+    margin-top: 39px;
+  }
+
   .directory__items {
     display: flex;
     flex-wrap: wrap;
@@ -3648,6 +3819,25 @@ body.about-us .advantages-snp p {
 
   .directory__item:nth-child(2) {
     width: calc(100% - 320px);
+  }
+
+  .contacts .snp-is-your-partner__text-above-form {
+    margin-left: 52%;
+  }
+
+  .contacts__items {
+    background-color: #F6F7F9;
+    border-radius: 10px;
+  }
+
+  .contacts__items {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .contacts__item {
+    width: 50%;
   }
 }
 
@@ -4161,6 +4351,10 @@ body.about-us .advantages-snp p {
     font-size: 17px;
     line-height: 28px;
   }
+
+  .contacts__wrap-blocks-info {
+    padding: 50px;
+  }
 }
 
 @media screen and (max-width: 1100.98px) {
@@ -4561,6 +4755,16 @@ body.about-us .advantages-snp p {
 
   .modern-energy-in-ukraine .block-with-map__block-image {
     width: 100%;
+  }
+
+  .contacts .snp-is-your-partner__text-above-form {
+    margin-top: 33px;
+  }
+
+  .contacts__wrap-blocks-info {
+    background-color: #F6F7F9;
+    border-radius: 10px;
+    padding: 60px 40px;
   }
 }
 
@@ -5353,6 +5557,55 @@ body.about-us .advantages-snp p {
     margin-bottom: 31px;
   }
 
+  .contacts .page__title {
+    padding-bottom: 30px;
+  }
+
+  .contacts__items {
+    margin-bottom: 51px;
+  }
+
+  .contacts__item .snp-is-your-partner__form,
+  .contacts__item .wpcf7-form {
+    padding: 15px 5px 8px;
+  }
+
+  .contacts__wrap-blocks-info {
+    padding: 18px 28px 21px;
+  }
+
+  .contacts__block-info p,
+  .contacts__block-info address {
+    font-size: 16px;
+    line-height: 36px;
+  }
+
+  .contacts__wrap-icon-and-name {
+    padding-bottom: 5px;
+  }
+
+  .contacts__wrap-icon-and-name p {
+    font-size: 16px;
+  }
+
+  .contacts .wrap-icon {
+    bottom: 1px;
+    height: 20px;
+    position: relative;
+    margin-right: 10px;
+    width: 20px;
+  }
+
+  .contacts__phone {
+    font-size: 16px;
+    line-height: 31px;
+  }
+
+  .error404 main.main {
+    padding-bottom: 36px;
+    padding-top: 102px;
+  }
+
   .footer {
     padding: 0 15px 15px;
   }
@@ -5428,6 +5681,26 @@ body.about-us .advantages-snp p {
   .header .menu {
     padding: 0;
   }
+
+  .error404__content {
+    width: 100%;
+  }
+
+  .error404__content p {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 285px;
+  }
+
+  .error404__content .n_btn {
+    min-width: 100px;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .error404__block-image {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 360.98px) {
@@ -5469,6 +5742,10 @@ body.about-us .advantages-snp p {
   body.single .single__head h1 {
     font-size: 28px;
     line-height: 30px;
+  }
+
+  .error404__block-image h1 {
+    letter-spacing: 4px;
   }
 }
 
