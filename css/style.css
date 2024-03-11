@@ -3050,6 +3050,161 @@ body._touch .header .menu__list > li._active .menu__arrow {
   margin: 0;
 }
 
+/* Page - News */
+
+.news .page__title {
+  padding-bottom: 54px;
+}
+
+.news .post__pagination {
+  margin: -36px 0 82px;
+}
+
+.newsPreview {
+  margin-top: 0;
+}
+
+.newsPreview__new {
+  margin-bottom: 55px;
+}
+
+.newsPreview__new p,
+.newsPreview__new h2 {
+  margin: 0;
+}
+
+.newsPreview__new p {
+  color: rgba(45, 45, 45, 0.65);
+  margin-top: 19px;
+}
+
+.newsPreview__new h2 {
+  color: #332F2C;
+  font-size: 25px;
+  line-height: 40px;
+  letter-spacing: 0;
+  margin-top: 16px;
+  max-width: 380px;
+}
+
+.newsPreview__new a {
+  color: #D98029;
+  display: table;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0;
+  margin-top: 34px;
+}
+
+.newsPreview__block-image {
+  padding-bottom: 57.3%;
+  position: relative;
+}
+
+.newsPreview__block-image img {
+  border-radius: 8px 8px 0 0;
+  left: 0;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+/* Page - New (Single) */
+
+body.single main.main {
+  padding-bottom: 3px;
+}
+
+body.single img {
+  border-radius: 8px 8px 0 0;
+}
+
+body.single .single__head {
+  padding-top: 79px;
+}
+
+body.single .single__head-block-image {
+  position: relative;
+}
+
+body.single .single__head-block-image img {
+  left: 0;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+body.single .single__head h1 {
+  color: #1B1B1B;
+  font-family: "Inter", sans-serif;
+  font-size: 59px;
+  font-weight: 600;
+  line-height: 63px;
+  letter-spacing: 0;
+  margin: 0 0 26px;
+  text-transform: uppercase;
+}
+
+body.single .single__date {
+  color: rgba(45, 45, 45, 0.65);
+  margin-bottom: 25px;
+}
+
+body.single .page__content ul,
+body.single .page__content ol {
+  margin: 49px 0;
+  padding-left: 0;
+}
+
+body.single .page__content ul li,
+body.single .page__content ol li {
+  list-style-position: inside;
+}
+
+body.single .page__content ol {
+  counter-reset: list;
+  list-style: none;
+}
+
+body.single .page__content ol li {
+  padding-left: 30px;
+  position: relative;
+}
+
+body.single .page__content ol li::before {
+  color: #D98029;
+  counter-increment: list;
+  content: counter(list) ".";
+  left: 5px;
+  position: absolute;
+}
+
+.page__content .wp-block-columns .wp-block-column {
+  position: relative;
+}
+
+.page__content .wp-block-columns .wp-block-column .wp-block-image {
+  position: relative;
+}
+
+.page__content .wp-block-columns .wp-block-column .wp-block-image img {
+  left: 0;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
 /* Footer */
 
 .footer {
@@ -3352,6 +3507,23 @@ body._touch .header .menu__list > li._active .menu__arrow {
   }
 }
 
+@media screen and (min-width: 721px) {
+  .page__content .wp-block-columns {
+    display: flex;
+    margin: 69px -10px 51px;
+  }
+
+  .page__content .wp-block-columns .wp-block-column {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: calc(33.3333% - 20px);
+  }
+
+  .page__content .wp-block-columns .wp-block-column .wp-block-image {
+    padding-bottom: 57.3%;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .investments__items {
     display: flex;
@@ -3362,6 +3534,18 @@ body._touch .header .menu__list > li._active .menu__arrow {
 
   .investments__item {
     margin: 0 10px 20px;
+    width: calc(50% - 20px);
+  }
+
+  .newsPreview {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+
+  .newsPreview__new {
+    margin: 0 10px 60px;
     width: calc(50% - 20px);
   }
 }
@@ -3381,6 +3565,10 @@ body._touch .header .menu__list > li._active .menu__arrow {
 
   .risks__block {
     border: 2px solid #D98029;
+  }
+
+  body.single .single__head-item:nth-child(2) {
+    width: 524px;
   }
 }
 
@@ -3524,6 +3712,21 @@ body._touch .header .menu__list > li._active .menu__arrow {
 
   .directory__item:nth-child(2) {
     width: calc(100% - 420px);
+  }
+
+  body.single .single__head-items {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  body.single .single__head-item:nth-child(1) {
+    padding-right: 45px;
+    width: calc(100% - 524px);
+  }
+
+  body.single .single__head-block-image {
+    height: 301px;
+    width: 524px;
   }
 
   .footer__item:last-child .footer__item-content {
@@ -3685,6 +3888,11 @@ body._touch .header .menu__list > li._active .menu__arrow {
 
 @media screen and (min-width: 1161px) {
   .investments__item {
+    width: calc(33.3333% - 20px);
+  }
+
+  .newsPreview__new {
+    margin-bottom: 80px;
     width: calc(33.3333% - 20px);
   }
 }
@@ -3888,6 +4096,11 @@ body._touch .header .menu__list > li._active .menu__arrow {
   .investments__block-buttons a {
     height: 55px;
   }
+
+  body.single .single__head h1 {
+    font-size: 48px;
+    line-height: 55px;
+  }
 }
 
 @media (max-width: 1280.98px) {
@@ -3906,6 +4119,13 @@ body._touch .header .menu__list > li._active .menu__arrow {
   .possibility__item ul li {
     font-size: 17px;
     line-height: 28px;
+  }
+}
+
+@media screen and (max-width: 1100.98px) {
+  body.single .single__head h1 {
+    font-size: 44px;
+    line-height: 52px;
   }
 }
 
@@ -4234,6 +4454,11 @@ body._touch .header .menu__list > li._active .menu__arrow {
     padding-right: 20px;
   }
 
+  body.single .single__head-block-image {
+    padding-bottom: 63.5%;
+    margin-bottom: 67px;
+  }
+
   .footer .n_container {
     padding-bottom: 35px;
     padding-top: 35px;
@@ -4388,6 +4613,10 @@ body._touch .header .menu__list > li._active .menu__arrow {
   .directions-of-work__button::after {
     right: 15px;
   }
+
+  .news .page__title {
+    padding-bottom: 118px;
+  }
 }
 
 @media screen and (max-width: 720.98px) {
@@ -4413,17 +4642,23 @@ body._touch .header .menu__list > li._active .menu__arrow {
   }
 
   .post__pagination .page-numbers {
-    height: 38px;
-    min-width: 38px;
     margin: 4px;
   }
 
-  .post__pagination .page-numbers.prev {
-    margin-right: 0;
+  .page__content .wp-block-columns {
+    margin-top: 20px;
   }
 
-  .post__pagination .page-numbers.next {
-    margin-left: 0;
+  .page__content .wp-block-columns .wp-block-column {
+    margin-bottom: 15px;
+  }
+
+  .page__content .wp-block-columns .wp-block-column img {
+    border-radius: 8px;
+  }
+
+  .page__content .wp-block-columns .wp-block-column .wp-block-image {
+    padding-bottom: 63.3%;
   }
 }
 
@@ -4924,8 +5159,25 @@ body._touch .header .menu__list > li._active .menu__arrow {
     margin-left: 11px;
   }
 
+  .post__pagination {
+    justify-content: flex-start;
+  }
+
   .post__pagination.hidden-mobile {
     display: none;
+  }
+
+  .post__pagination .page-numbers:not(.dots, .next, .prev) {
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  .post__pagination .page-numbers.prev {
+    margin-right: -11px;
+  }
+
+  .post__pagination .page-numbers.next {
+    margin-left: -11px;
   }
 
   .modern-energy-in-ukraine main.main {
@@ -4977,6 +5229,60 @@ body._touch .header .menu__list > li._active .menu__arrow {
     color: rgba(27, 27, 27, 0.65);
     font-size: 15px;
     line-height: 19px;
+  }
+
+  .news .post__pagination {
+    margin: -29px 0 78px;
+  }
+
+  .newsPreview__new p {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0;
+    margin-top: 12px;
+  }
+
+  .newsPreview__new h2 {
+    font-size: 16px;
+    line-height: 26px;
+    max-width: 250px;
+    margin-top: 12px;
+  }
+
+  .newsPreview__new a {
+    font-size: 14px;
+    line-height: 15px;
+    margin-top: 21px;
+  }
+
+  body.single main.main {
+    padding-bottom: 90px;
+  }
+
+  body.single .single__head {
+    padding-top: 57px;
+  }
+
+  body.single .single__head h1 {
+    font-size: 36px;
+    line-height: 38px;
+    margin-bottom: 13px;
+  }
+
+  body.single .single__date {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0;
+    margin-bottom: 16px;
+  }
+
+  body.single .page__content ul,
+  body.single .page__content ol {
+    margin: 22px 0;
+  }
+
+  body.single .page__content ol li {
+    padding-left: 22px;
   }
 
   .footer {
@@ -5090,6 +5396,11 @@ body._touch .header .menu__list > li._active .menu__arrow {
 
   .investments__block-buttons a img {
     margin-left: 3px;
+  }
+
+  body.single .single__head h1 {
+    font-size: 28px;
+    line-height: 30px;
   }
 }
 
