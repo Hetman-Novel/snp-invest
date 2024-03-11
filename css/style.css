@@ -3205,6 +3205,39 @@ body.single .page__content ol li::before {
   width: 100%;
 }
 
+/* Page - About us */
+
+body.about-us .page__head {
+  padding-bottom: 325px;
+}
+
+body.about-us .page__head-bg-image img {
+  -o-object-position: 0 37.5%;
+     object-position: 0 37.5%;
+}
+
+body.about-us .our-specialty {
+  padding-bottom: 26px;
+  padding-top: 96px;
+}
+
+body.about-us .our-services {
+  padding-bottom: 187px;
+}
+
+body.about-us .advantages-snp {
+  padding-bottom: 65px;
+  padding-top: 89px;
+}
+
+body.about-us .advantages-snp .n_sec-title {
+  margin-bottom: 55px;
+}
+
+body.about-us .advantages-snp p {
+  color: #333;
+}
+
 /* Footer */
 
 .footer {
@@ -3436,6 +3469,10 @@ body.single .page__content ol li::before {
   .directory__items {
     display: flex;
     flex-wrap: wrap;
+  }
+
+  body.about-us .page__head-bg-image::before {
+    display: none;
   }
 
   .footer__items {
@@ -3938,6 +3975,10 @@ body.single .page__content ol li::before {
 @media (max-width: 1676px) {
   .fs {
     padding-bottom: calc(176px + 297 * ((100vw - 320px) / 1356));
+  }
+
+  body.about-us .page__head {
+    padding-bottom: calc(209px + 116 * ((100vw - 320px) / 1356));
   }
 }
 
@@ -4457,6 +4498,10 @@ body.single .page__content ol li::before {
   body.single .single__head-block-image {
     padding-bottom: 63.5%;
     margin-bottom: 67px;
+  }
+
+  body.about-us .our-services {
+    padding-bottom: 100px;
   }
 
   .footer .n_container {
@@ -5283,6 +5328,29 @@ body.single .page__content ol li::before {
 
   body.single .page__content ol li {
     padding-left: 22px;
+  }
+
+  body.about-us .page__head-bg-image img {
+    -o-object-position: 55% 0;
+       object-position: 55% 0;
+  }
+
+  body.about-us .our-specialty {
+    padding-bottom: 17px;
+    padding-top: 70px;
+  }
+
+  body.about-us .our-services {
+    padding-bottom: 24px;
+  }
+
+  body.about-us .advantages-snp {
+    padding-bottom: 79px;
+    padding-top: 32px;
+  }
+
+  body.about-us .advantages-snp .n_sec-title {
+    margin-bottom: 31px;
   }
 
   .footer {
