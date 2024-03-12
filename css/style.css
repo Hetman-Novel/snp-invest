@@ -2543,6 +2543,7 @@ body._touch .header .menu__list > li._active .menu__arrow {
   background-color: #FBFBFB;
   border-radius: 8px;
   border: 2px solid #FBFBFB;
+  cursor: pointer;
   padding: 30px 30px 22px;
   transition: 0.3s ease 0s;
 }
@@ -2783,6 +2784,7 @@ body._touch .header .menu__list > li._active .menu__arrow {
   margin-bottom: 20px;
 }
 
+.risks__block .risks__block-link-image,
 .risks__block img {
   border-radius: 8px;
   height: auto;
@@ -2978,10 +2980,6 @@ body._touch .header .menu__list > li._active .menu__arrow {
 
 .modern-energy-in-ukraine .block-with-map__block-text {
   padding: 35px 50px 35px 41px;
-}
-
-.modern-energy-in-ukraine .block-with-map__block-text p {
-  color: rgba(255, 255, 255, 0.65);
 }
 
 .modern-energy-in-ukraine .block-with-map__block-image {
@@ -3625,6 +3623,7 @@ body.about-us .advantages-snp p {
     content: url("../images/svg/corner-for-risks-block.svg");
   }
 
+  .risks__block .risks__block-link-image,
   .risks__block img {
     padding-right: 8px;
   }
@@ -4603,24 +4602,32 @@ body.about-us .advantages-snp p {
 
 @media screen and (max-width: 1099.98px) and (max-width: 360.98px) {
   .header .menu__icon {
-    height: 40px;
-    flex: 0 0 40px;
-    width: 40px;
+    border-radius: 4px;
+    height: 32px;
+    flex: 0 0 32px;
+    width: 32px;
   }
 
   .header .menu__icon span,
   .header .menu__icon::before,
   .header .menu__icon::after {
-    left: 8px;
-    width: 22px;
+    left: 5px;
+    width: 20px;
   }
 
   .header .menu__icon::before {
-    top: 12px;
+    top: 9px;
   }
 
   .header .menu__icon::after {
-    bottom: 12px;
+    bottom: 9px;
+  }
+
+  .header .menu__icon._active span,
+  .header .menu__icon._active::before,
+  .header .menu__icon._active::after {
+    left: 7.4px;
+    width: 17px;
   }
 }
 
@@ -4754,6 +4761,7 @@ body.about-us .advantages-snp p {
   }
 
   .modern-energy-in-ukraine .block-with-map__block-image {
+    margin-top: -8%;
     width: 100%;
   }
 
@@ -5030,6 +5038,15 @@ body.about-us .advantages-snp p {
   input[type=submit] {
     height: 54px;
     min-width: 130px;
+  }
+
+  .header__social {
+    margin-right: 3px;
+  }
+
+  .header__social li {
+    margin-left: 7.5px;
+    margin-right: 7.5px;
   }
 
   .fs {
@@ -5647,7 +5664,7 @@ body.about-us .advantages-snp p {
 @media screen and (max-width: 480.98px) {
   .header__button {
     max-width: 100%;
-    width: calc(100% - 101px);
+    width: 100%;
   }
 
   .our-specialty__button {
@@ -5668,6 +5685,13 @@ body.about-us .advantages-snp p {
   .wpcf7-form .snp-is-your-partner__form-wrap-field input[type=submit],
   .wpcf7-form .wpcf7-form-control-wrap input .n_btn,
   .wpcf7-form .wpcf7-form-control-wrap input[type=submit] {
+    width: 100%;
+  }
+
+  .snp-is-your-partner__form .snp-is-your-partner__form-wrap-field.mobile-full-width,
+  .snp-is-your-partner__form .wpcf7-form-control-wrap.mobile-full-width,
+  .wpcf7-form .snp-is-your-partner__form-wrap-field.mobile-full-width,
+  .wpcf7-form .wpcf7-form-control-wrap.mobile-full-width {
     width: 100%;
   }
 
@@ -5709,13 +5733,21 @@ body.about-us .advantages-snp p {
     line-height: 28px;
   }
 
+  .header__blockLogo {
+    flex: 0 0 84px;
+  }
+
   .header__social {
-    margin-right: 8px;
+    margin-right: 2px;
   }
 
   .header__social li {
-    margin-left: 7.5px;
-    margin-right: 7.5px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .header__social li:first-child {
+    margin-right: 1px;
   }
 
   .fs h1 {

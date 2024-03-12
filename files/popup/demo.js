@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
          setTimeout(() => {
             popup_wrap_form.classList.remove('hidden');
             popup_after_sending.classList.add('hidden');
-         }, 300)
+         }, 600)
       });
    }
 

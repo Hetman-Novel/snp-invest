@@ -16,6 +16,9 @@
    position: relative;
    width: 100%;
 }
+.tabs__wrap-tab .tab.cursor-default-hover {
+   cursor: default;
+}
 .tabs__wrap-tab .tab h4,
 .tabs__wrap-tab .tab p {
    color: #fff;
